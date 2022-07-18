@@ -1,9 +1,20 @@
 <template>
-  <nav>
+  <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-black">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/about">Resume</router-link> |
+    <router-link to="/about">Projects</router-link> |
+    <router-link to="/about">Testimonials</router-link> |
+    <router-link to="/about">Contact</router-link>
   </nav>
   <router-view/>
+  
+
+
+          
+
+        
+      
 </template>
 
 <style>
