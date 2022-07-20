@@ -5,7 +5,7 @@
     <router-link to="/about">Resume</router-link> |
     <router-link to="/about">Projects</router-link> |
     <router-link to="/about">Testimonials</router-link> |
-    <router-link to="/about">Contact</router-link>
+    <router-link to="/contact">Contact</router-link>
   </nav>
   <router-view/>
   
