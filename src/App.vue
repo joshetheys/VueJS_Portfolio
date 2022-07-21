@@ -25,10 +25,10 @@ import Resume from './components/Resume.vue';
 import Projects from './components/Projects.vue';
 import Testimonials from './components/Testimonials.vue';
 import Contact from './components/Contact.vue';
-import HomeView from './components/HomeView.vue';
+
 
 export default {
-  components: { NavBar, Footer,HomeView, AboutView, Resume, Projects, Testimonials, Contact, HomeView },
+  components: { NavBar, Footer,HomeView, AboutView, Resume, Projects, Testimonials, Contact },
 };
 </script>
 <style>

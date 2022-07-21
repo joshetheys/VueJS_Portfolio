@@ -1,12 +1,12 @@
 <template>
     <section>
-  <h1>My Projects</h1>
+  <!-- <h1>My Projects</h1>
   <div class="button-container">
     <button onclick="filterCards('All')">All</button>
     <button onclick="filterCards('HTML/CSS')">HTML/CSS</button>
     <button onclick="filterCards('JavaScript')">JavaScript</button>
     <button onclick="filterCards('Vue.JS')">Vue.JS</button>
-  </div>
+  </div> -->
   <!-- <div class="project-container"></div> -->
   <div class="project-container">
 <div class="row">
@@ -32,50 +32,50 @@
 <script>
 
 
-function createCard(card) {
-  let createdCard = `<div class="project-card" techStack=${card.techStack} >
-      <img src="${card.imgURL}" alt="${card.imgALT}">
-      <h4>${card.title}</h4>
-      <h6>${card.techStack}</h6>
-      <p>${card.description}</p>
-      <a href="${card.githubURL}">Github</a>
-      <a href="${card.liveProjectURL}">Live</a>
-    </div>
-  `;
-  return createdCard;
-}
+// function createCard(card) {
+//   let createdCard = `<div class="project-card" techStack=${card.techStack} >
+//       <img src="${card.imgURL}" alt="${card.imgALT}">
+//       <h4>${card.title}</h4>
+//       <h6>${card.techStack}</h6>
+//       <p>${card.description}</p>
+//       <a href="${card.githubURL}">Github</a>
+//       <a href="${card.liveProjectURL}">Live</a>
+//     </div>
+//   `;
+//   return createdCard;
+// }
 
-function renderCards() {
-  let projectContainer = document.querySelector(".project-container");
-  for (project of projects) {
-    let card = createCard(project);
-    projectContainer.innerHTML += card;
-  }
-}
+// function renderCards() {
+//   let projectContainer = document.querySelector(".project-container");
+//   for (project of projects) {
+//     let card = createCard(project);
+//     projectContainer.innerHTML += card;
+//   }
+// }
 
-renderCards();
+// renderCards();
 
-function filterCards(category) {
-  let cards = document.getElementsByClassName("project-card");
+// function filterCards(category) {
+//   let cards = document.getElementsByClassName("project-card");
 
-  if (category === "All") {
-    for (card of cards) {
-      card.style.display = "block";
-    }
-    return;
-  }
+//   if (category === "All") {
+//     for (card of cards) {
+//       card.style.display = "block";
+//     }
+//     return;
+//   }
 
-  for (card of cards) {
-    console.log(card);
-    card.style.display = "none";
-  }
+//   for (card of cards) {
+//     console.log(card);
+//     card.style.display = "none";
+//   }
 
-  let selectedCards = document.querySelectorAll(`[techStack='${category}']`);
+//   let selectedCards = document.querySelectorAll(`[techStack='${category}']`);
 
-  for (card of selectedCards) {
-    card.style.display = "block";
-  }
-}
+//   for (card of selectedCards) {
+//     card.style.display = "block";
+//   }
+// }
 
     export default {
   computed: {
@@ -87,7 +87,7 @@ function filterCards(category) {
 
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 * {
   margin: 0;
   padding: 0;
