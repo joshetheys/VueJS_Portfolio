@@ -1,13 +1,13 @@
 <template>
-  <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-black">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/about">Resume</router-link> |
-    <router-link to="/about">Projects</router-link> |
-    <router-link to="/about">Testimonials</router-link> |
-    <router-link to="/contact">Contact</router-link>
-  </nav>
+<NavBar/>
   <router-view/>
+  <HomeView/>
+  <AboutView/>
+  <Resume/>
+  <Projects/>
+  <Testimonials/>
+  <Contact/>
+  <Footer/>
   
 
 
@@ -16,7 +16,21 @@
         
       
 </template>
+<script>
+import NavBar from './components/NavBar.vue';
+import Footer from './components/Footer.vue';
+import HomeView from './components/HomeView.vue';
+import AboutView from './components/AboutView.vue';
+import Resume from './components/Resume.vue';
+import Projects from './components/Projects.vue';
+import Testimonials from './components/Testimonials.vue';
+import Contact from './components/Contact.vue';
+import HomeView from './components/HomeView.vue';
 
+export default {
+  components: { NavBar, Footer,HomeView, AboutView, Resume, Projects, Testimonials, Contact, HomeView },
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -36,6 +50,6 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: pink;
 }
 </style>

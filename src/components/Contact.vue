@@ -7,13 +7,13 @@
                     <p>Get in Touch</p>
                 </div>
                 <div class="row mt-2">
-                    <div class="col-md-6 mt-4 d-flex align-items-stretch">
+                    <div class="col-md-6 mt-4 ">
                         <div class="info-box"> <i class="bx bx-envelope"></i>
                             <h3><i class="bi bi-envelope"></i>Email Me</h3>
                             <p>JosheTheys@gmail.com</p>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-4 d-flex align-items-stretch">
+                    <div class="col-md-6 mt-4 ">
                         <div class="info-box"> <i class="bx bx-phone-call"></i>
                             <h3><i class="bi bi-telephone-fill"></i>Call Me</h3>
                             <p>074 485 0721</p>

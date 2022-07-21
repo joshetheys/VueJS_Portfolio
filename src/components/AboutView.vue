@@ -3,10 +3,10 @@
     <h1 class="display-2 text-center">About</h1>
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-xl-4 col-md-12">
                 <img class="img-fluid" src="https://i.postimg.cc/QNQnhpBV/Joshe-Jade-1.jpg" alt="My Image" style="height: 100%; ">
             </div>
-            <div class="col-md-8">
+            <div class="col-xl-8 col-md-12">
                 <h2>
                     Hi there! I'm Joshé Theys.
                 </h2>
@@ -66,4 +66,28 @@
 
     </div>
   </div>
+
+   <h1 class="display-2 text-center p-5" >Skills</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                CSS
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                  </div>
+            </div>
+            <div class="col-4">
+                HTML
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                  </div>
+            </div>
+            <div class="col-4">
+                Java Script
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+                  </div>
+            </div>
+        </div>
+    </div>
 </template>
