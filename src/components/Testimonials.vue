@@ -1,6 +1,6 @@
 <template>
-    <section  id="testimonials">
-        <div class="section-title">
+    <section  id="testimonials" style="padding-top: 4em;">
+        <div class="section-title display-2 text-center" style="color: #6c63ff">
             <h2>Testimonials</h2>
         </div>
         <div class="container">
@@ -107,6 +107,7 @@ export default {
 </script>
 
 <style scoped>
+
 .shadow-effect {
     background: rgb(61, 61, 61);
     padding: 20px;
@@ -132,7 +133,7 @@ export default {
     padding: 9px 35px;
     border-radius: 12px;
     text-align: center;
-    color: #fff;
+    color: rgb(61, 61, 61);
     box-shadow: 0 9px 18px rgba(0, 0, 0, 0.12), 0 5px 7px rgba(0, 0, 0, 0.05);
 }
 
