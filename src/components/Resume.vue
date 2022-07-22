@@ -2,8 +2,8 @@
     <section id="resume">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Resume</h2>
+          <div class="col-lg-12 text-center" style="color: #6c63ff">
+            <h2 class="section-heading text-uppercase display-2 text-center">Resume</h2>
             <h3 class="section-subheading text-muted">My Journey In A Few Short Words</h3>
           </div>
         </div>
