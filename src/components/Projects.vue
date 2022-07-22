@@ -1,6 +1,6 @@
 <template>
    <section  id="projects">
-        <div class="section-title">
+        <div class="section-title display-2 text-center" style="color: #6c63ff">
             <h2>Projects</h2>
         </div>
 <div class="container pt-5">
@@ -12,15 +12,20 @@
                    <img class="img rounded" :src="project.image" alt="" />
                     <!-- <a href="" class="project-link">Learn more...</a> -->
                      <p class="text-black project-link ">
-                                    <i class="fas fa-quote-left"></i>
+                                    <!-- <i class="fas fa-quote-left"></i> -->
                                     <p style="d-flex justify-content-start">{{ project.projectName }}</p>
-                                    <i class="fas fa-quote-right"></i>
+                                    <!-- <i class="fas fa-quote-right"></i> -->
                                 </p> 
 
                                 <p class="text-black project-link">
                                     <i class="fas fa-quote-left"></i>
                                     {{ project.aboutProject }}
                                     <i class="fas fa-quote-right"></i>
+                                </p>
+                                <p class="project-link">
+                                    <!-- <i class="fas fa-quote-left"></i> -->
+                                    {{ project.githubLink }}  {{ project.liveLink }}
+                                     <!-- <i class="fas fa-quote-right"></i> -->
                                 </p>
                 </div>
             </div>
@@ -37,31 +42,43 @@ export default {
                 image: "https://i.postimg.cc/QdSMqxYD/To-Do-List.png",
                 projectName: "To Do List App",
                 aboutProject: "I created a To List App that can be used as a task manager using Javascript, HTML and CSS.",
+                githubLink: <v-btn color="#6c63ff" dark text class="ml-n4"><a href="https://github.com/joshetheys/toDoApp"><v-icon>mdi-github</v-icon></a></v-btn>,
+                liveLink: <v-btn color="#6c63ff" dark text class="ml-n4"><a href="https://enchanting-lamington-dee74e.netlify.app/"><v-icon>mdi-web</v-icon></a></v-btn>
             },
             {
                 image: "https://i.postimg.cc/HsxvLSGt/Kpop-Ecommerce-Store.png",
                 projectName: "Kpop Ecommerce Store",
                 aboutProject: "I created a Kpop Ecommerce Store using Javascript, HTML and CSS.",
+                githubLink: <v-btn color="#6c63ff" dark text class="ml-n4"><a href="https://delicate-pika-3faae9.netlify.app/"><v-icon>mdi-github</v-icon></a></v-btn>,
+                liveLink: <v-btn color="#6c63ff" dark text class="ml-n4"><a href="https://github.com/joshetheys/Product_website_js"><v-icon>mdi-web</v-icon></a></v-btn>
             },
             {
                 image: "https://i.postimg.cc/RF21VTwg/Temperature-Convertor.png",
                 projectName: "Temperature Convertor",
                 aboutProject: "I created a Temperature Convertor using Javascript, HTML and CSS.",
+                githubLink: <v-btn color="#6c63ff" dark text class="ml-n4"><a href="https://github.com/joshetheys/Temperature_Converter"><v-icon>mdi-github</v-icon></a></v-btn>,
+                liveLink: <v-btn color="#6c63ff" dark text class="ml-n4"><a href="https://tourmaline-moxie-a9ee99.netlify.app/"><v-icon>mdi-web</v-icon></a></v-btn>
             },
             {
                 image: "https://i.postimg.cc/qqbT3zMD/Functional-Calculator.png",
                 projectName: "Calculator",
                 aboutProject: "I created a Functional Calculator using Javascript, HTML and CSS.",
+                githubLink: <v-btn color="#6c63ff" dark text class="ml-n4"><a href="https://tourmaline-pavlova-d08658.netlify.app/"><v-icon>mdi-github</v-icon></a></v-btn>,
+                liveLink: <v-btn color="#6c63ff" dark text class="ml-n4"><a href="https://github.com/joshetheys/Javascript_Calculator"><v-icon>mdi-web</v-icon></a></v-btn>
             },
             {
                 image: "https://i.postimg.cc/JzbRT7T0/Age-To-Days-Calculator.png",
                 projectName: "Age to Days Calculator",
                 aboutProject: "I created a calculator that when user inputes their date of birth, it will return the number of days the user has been alive for.",
+                githubLink: <v-btn color="#6c63ff" dark text class="ml-n4"><a href="https://github.com/joshetheys/ageToDays"><v-icon>mdi-github</v-icon></a></v-btn>,
+                liveLink: <v-btn color="#6c63ff" dark text class="ml-n4"><a href="https://storied-froyo-61ea7a.netlify.app/"><v-icon>mdi-web</v-icon></a></v-btn>
             },
             {
                 image: "https://i.postimg.cc/NGzC5W6j/BMI-Calculator.png",
                 projectName: "BMI Calculator",
                 aboutProject: "I created a BMI Calculator wherein the user inputes their weight and height which will used to return a BMI number using Javascript, HTML and CSS.",
+                githubLink: <v-btn color="#6c63ff" dark text class="ml-n4"><a href="https://github.com/joshetheys/BMI_Calculator"><v-icon>mdi-github</v-icon></a></v-btn>,
+                liveLink: <v-btn color="#6c63ff" dark text class="ml-n4"><a href="https://cheery-scone-c2bb0f.netlify.app/"><v-icon>mdi-web</v-icon></a></v-btn>
             }
         ]
         }
