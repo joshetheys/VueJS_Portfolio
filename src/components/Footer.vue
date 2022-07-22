@@ -8,13 +8,13 @@
           <div class="col-md-6">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
+                <a href="https://github.com/joshetheys">
+                  <i class="fab fa-github"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
+                <a href="https://www.instagram.com/joshe_2001/">
+                 <i class="fab fa-instagram"></i>
                 </a>
               </li>
               <li class="list-inline-item">
