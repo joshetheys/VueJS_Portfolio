@@ -2,7 +2,7 @@
     <section id="contact" class="contact">
         <div class="container my-5">
             <div class="section-title">
-                <h2 class="display-2 text-center">Contact</h2>
+                <h2 class="display-2 text-center" style="color: #6c63ff;">Contact</h2>
                 <p>Get in Touch</p>
             </div>
             <div class="row mt-2">
