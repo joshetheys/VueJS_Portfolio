@@ -31,7 +31,7 @@
                 <div class="form-group mt-3"><textarea class="form-control" name="message" rows="5"
                         placeholder="Message" required></textarea></div>
 
-                <div class="text-center"><button class="button text-white" type="submit">Send Message</button></div>
+                <div class="text-center"><button class="button text-white " style="border-radius:20px; border: none; margin-top: 3rem; padding: 10px" type="submit">Send Message</button></div>
             </form>
         </div>
     </section>
@@ -41,7 +41,7 @@
 
 </script>
 
-<style >
+<style scoped>
 .button{
     background-color: #6c63ff;
 }

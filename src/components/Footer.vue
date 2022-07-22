@@ -34,7 +34,7 @@
     </footer>
 
 </template>
-<style>
+<style scoped>
 footer {
   padding: 25px 0;
   text-align: center;

@@ -19,9 +19,9 @@
       <p>I am an aspiring full-stack developer.</p>
       <button> <a href="https://github.com/joshetheys"></a>GitHub</button>
     </div>
-    <div class="image">
+    <!-- <div class="image">
       <img src="https://i.postimg.cc/qRFKSZZ1/Joshe-Jade-1-removebg-preview.png">
-    </div>
+    </div> -->
     <div class="clearfix"></div>
   </div>
 </div>
@@ -47,13 +47,14 @@ export default {
   
 </script>
 
-<style>
+<style scoped>
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+   overflow-x: hidden;
 }
 
 .container {
@@ -139,7 +140,8 @@ body {
 }
 
 .landing-page .image {
-    width: 50%;
+    width: 100%;
+height: 50vh;
     float: right;
     margin-top: 35px;
 }

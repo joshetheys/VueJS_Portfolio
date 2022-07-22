@@ -12,7 +12,7 @@
             <ul class="timeline">
               <li>
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="https://i.postimg.cc/1zBk5XSq/logo.png" alt="">
+                  <img class="rounded-circle img-fluid" style="width:90px ; height:100% " src="https://i.postimg.cc/1zBk5XSq/logo.png" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">

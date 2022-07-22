@@ -5,16 +5,18 @@
         </div>
 <div class="container pt-5">
         <div class="row">
-            <div class="col-sm " v-for="project in projects"
+            <div class="col-md-6 " v-for="project in projects"
             :key="project">
+
                 <div class="project-card">
                    <img class="img rounded" :src="project.image" alt="" />
                     <!-- <a href="" class="project-link">Learn more...</a> -->
-                     <p class="text-black project-link">
+                     <p class="text-black project-link ">
                                     <i class="fas fa-quote-left"></i>
-                                    {{ project.projectName }}
+                                    <p style="d-flex justify-content-start">{{ project.projectName }}</p>
                                     <i class="fas fa-quote-right"></i>
                                 </p> 
+
                                 <p class="text-black project-link">
                                     <i class="fas fa-quote-left"></i>
                                     {{ project.aboutProject }}
@@ -100,7 +102,6 @@ export default {
  .project-link {
 	 position: relative;
 	 display: block;
-	 padding-left: 200px;
 	 text-decoration: none;
 }
  .bg-transparent {
