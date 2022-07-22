@@ -1,32 +1,23 @@
 
 <template>
- <!-- Start Landing Page -->
+
 
 <div class="landing-page" id="home">
   <div class="container">
-    <!-- <div class="header-area">
-      <div class="logo">Your <b>Website</b></div>
-      <ul class="links">
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Work</li>
-        <li>Info</li>
-        <li>Get Started</li>
-      </ul>
-    </div> -->
+
     <div class="info">
       <h1>Hello, I'm Joshé Theys!</h1>
       <p>I am an aspiring full-stack developer.</p>
       <button> <a href="https://github.com/joshetheys"></a>GitHub</button>
     </div>
-    <!-- <div class="image">
+    <div class="image">
       <img src="https://i.postimg.cc/qRFKSZZ1/Joshe-Jade-1-removebg-preview.png">
-    </div> -->
+    </div>
     <div class="clearfix"></div>
   </div>
 </div>
 
-<!-- End Landing Page -->
+
  
 
  
@@ -57,12 +48,12 @@ body {
    overflow-x: hidden;
 }
 
-.container {
+/* .container {
     width: 1170px;
     padding-right: 15px;
     padding-left: 15px;
     margin: auto;
-}
+} */
 
 /* Start Landing Page */
 
