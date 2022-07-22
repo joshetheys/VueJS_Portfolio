@@ -1,118 +1,117 @@
 <template>
-    <section>
-  <!-- <h1>My Projects</h1>
-  <div class="button-container">
-    <button onclick="filterCards('All')">All</button>
-    <button onclick="filterCards('HTML/CSS')">HTML/CSS</button>
-    <button onclick="filterCards('JavaScript')">JavaScript</button>
-    <button onclick="filterCards('Vue.JS')">Vue.JS</button>
-  </div> -->
-  <!-- <div class="project-container"></div> -->
-  <div class="project-container">
-<div class="row">
-    <div class="col-md-3" v-for="project in projects"
-            :key="project">
-    <div class="card" >
-      <div class="card-body">
-        <div class="card-content">
-          <h2 class="card-title">{{project.projectName}}</h2>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis tempora at rerum?
-          </p>
-          <button>Learn more &rightarrow;</button>
+   <section  id="projects">
+        <div class="section-title">
+            <h2>Projects</h2>
         </div>
-      </div>
+<div class="container pt-5">
+        <div class="row">
+            <div class="col-sm " v-for="project in projects"
+            :key="project">
+                <div class="project-card">
+                   <img class="img rounded" :src="project.image" alt="" />
+                    <!-- <a href="" class="project-link">Learn more...</a> -->
+                     <p class="text-black project-link">
+                                    <i class="fas fa-quote-left"></i>
+                                    {{ project.projectName }}
+                                    <i class="fas fa-quote-right"></i>
+                                </p> 
+                                <p class="text-black project-link">
+                                    <i class="fas fa-quote-left"></i>
+                                    {{ project.aboutProject }}
+                                    <i class="fas fa-quote-right"></i>
+                                </p>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-</div>
-</div>
-</section>
+    </section>
 </template>
 
 <script>
-
-
-// function createCard(card) {
-//   let createdCard = `<div class="project-card" techStack=${card.techStack} >
-//       <img src="${card.imgURL}" alt="${card.imgALT}">
-//       <h4>${card.title}</h4>
-//       <h6>${card.techStack}</h6>
-//       <p>${card.description}</p>
-//       <a href="${card.githubURL}">Github</a>
-//       <a href="${card.liveProjectURL}">Live</a>
-//     </div>
-//   `;
-//   return createdCard;
-// }
-
-// function renderCards() {
-//   let projectContainer = document.querySelector(".project-container");
-//   for (project of projects) {
-//     let card = createCard(project);
-//     projectContainer.innerHTML += card;
-//   }
-// }
-
-// renderCards();
-
-// function filterCards(category) {
-//   let cards = document.getElementsByClassName("project-card");
-
-//   if (category === "All") {
-//     for (card of cards) {
-//       card.style.display = "block";
-//     }
-//     return;
-//   }
-
-//   for (card of cards) {
-//     console.log(card);
-//     card.style.display = "none";
-//   }
-
-//   let selectedCards = document.querySelectorAll(`[techStack='${category}']`);
-
-//   for (card of selectedCards) {
-//     card.style.display = "block";
-//   }
-// }
-
-    export default {
-  computed: {
-    projects() {
-      return this.$store.state.projects;
-    },
-  },
+export default {
+    data() {
+        return {
+           projects: [{
+                image: "https://i.postimg.cc/QdSMqxYD/To-Do-List.png",
+                projectName: "To Do List App",
+                aboutProject: "I created a To List App that can be used as a task manager using Javascript, HTML and CSS.",
+            },
+            {
+                image: "https://i.postimg.cc/HsxvLSGt/Kpop-Ecommerce-Store.png",
+                projectName: "Kpop Ecommerce Store",
+                aboutProject: "I created a Kpop Ecommerce Store using Javascript, HTML and CSS.",
+            },
+            {
+                image: "https://i.postimg.cc/RF21VTwg/Temperature-Convertor.png",
+                projectName: "Temperature Convertor",
+                aboutProject: "I created a Temperature Convertor using Javascript, HTML and CSS.",
+            },
+            {
+                image: "https://i.postimg.cc/qqbT3zMD/Functional-Calculator.png",
+                projectName: "Calculator",
+                aboutProject: "I created a Functional Calculator using Javascript, HTML and CSS.",
+            },
+            {
+                image: "https://i.postimg.cc/JzbRT7T0/Age-To-Days-Calculator.png",
+                projectName: "Age to Days Calculator",
+                aboutProject: "I created a calculator that when user inputes their date of birth, it will return the number of days the user has been alive for.",
+            },
+            {
+                image: "https://i.postimg.cc/NGzC5W6j/BMI-Calculator.png",
+                projectName: "BMI Calculator",
+                aboutProject: "I created a BMI Calculator wherein the user inputes their weight and height which will used to return a BMI number using Javascript, HTML and CSS.",
+            }
+        ]
+        }
+    }
 };
 
 </script>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.img {
+	 width: 100%;
+	 max-width: 500px;
+	 height: 100%;
+	 max-height: 500px;
+	 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-
-body {
-  font-family: sans-serif;
-  /*   font-size: 0.3rem; */
+ .project-card {
+	 transition: transform 330ms ease-in-out;
+	 animation-fill-mode: forwards;
+	 max-height: 800px;
 }
-
-.project-container {
-  display: flex;
-  flex-wrap: wrap;
+ .project-card a {
+	 color: transparent;
+	 transition: 0.3s ease-in-out;
 }
-
-.project-card {
-  width: 23%;
-  margin: 1%;
+ .project-card:hover {
+	 transform: translate(0, -50px);
+	 -webkit-transform: translate(0, -50px);
+	 -o-transform: translate(0, -50px);
+	 -moz-transform: translate(0, -50px);
 }
-
-.project-card img {
-  height: 300px;
-  width: 100%;
-  object-fit: cover;
+ .project-card:hover a {
+	 padding-top: 10px;
+	 font-size: 14pt;
+	 color: #1919ee;
+	 text-decoration: underline;
 }
-
+ .project-link {
+	 position: relative;
+	 display: block;
+	 padding-left: 200px;
+	 text-decoration: none;
+}
+ .bg-transparent {
+	 background-color: transparent;
+}
+ @media screen and (max-width: 600px) {
+	 .project-link {
+		 position: relative;
+		 display: block;
+		 padding-left: 120px;
+		 text-decoration: none;
+	}
+}
 </style>

@@ -1,45 +1,35 @@
-<!-- <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
-</template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
-</script> -->
 <template>
-  <div class="home">
-    <div id="home" class="container d-flex justify-content-center align-items-center vh-100">
-      <div class="d-inline-block">
-      <h1 style="color: white; font-size: 5vw; margin-bottom: 1rem" data-aos="fade-up"
-     data-aos-duration="2000">
-       Joshé Theys
-      </h1> <br>
-      <p id="landingP" class="text-center" style="color: white; word-wrap: break-word; " data-aos="fade-up"
-     data-aos-duration="2000">
-       I'm an aspiring Full Stack Web Developer from Cape Town.
-      </p>
-     
-      </div>
-    </div>
-  </div>
+ <!-- Start Landing Page -->
 
+<div class="landing-page" id="home">
+  <div class="container">
+    <!-- <div class="header-area">
+      <div class="logo">Your <b>Website</b></div>
+      <ul class="links">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Work</li>
+        <li>Info</li>
+        <li>Get Started</li>
+      </ul>
+    </div> -->
+    <div class="info">
+      <h1>Hello, I'm Joshé Theys!</h1>
+      <p>I am an aspiring full-stack developer.</p>
+      <button> <a href="https://github.com/joshetheys"></a>GitHub</button>
+    </div>
+    <div class="image">
+      <img src="https://i.postimg.cc/qRFKSZZ1/Joshe-Jade-1-removebg-preview.png">
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+
+<!-- End Landing Page -->
  
 
- <div>
-  
-
-   
-  </div>
+ 
 </template>
 
 <script>
@@ -58,7 +48,112 @@ export default {
 </script>
 
 <style>
-.home {
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+}
+
+/* Start Landing Page */
+
+.landing-page {
+    position: relative;
+    background-color: #FFF;
+}
+
+.landing-page .header-area {
+    display: flex;
+    padding: 25px 0 0;
+    position: relative;
+}
+
+.landing-page .header-area .logo {
+    text-transform: uppercase;
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 19px;
+    width: 300px;
+    color: #5d5d5d;
+}
+
+.landing-page .header-area .links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: right;
+}
+
+.landing-page .header-area .links li {
+    display: inline-block;
+    margin-left: 30px;
+    color: #5d5d5d;
+    cursor: pointer;
+}
+
+.landing-page .header-area .links li:last-child {
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 18px;
+    color: #FFF;
+    background-color: #6c63ff;
+}
+
+.landing-page .info {
+    width: 35%;
+    float: left;
+    margin-top: 130px;
+}
+
+.landing-page .info h1 {
+    font-size: 44px;
+    margin: 0 0 20px;
+    line-height: 1.4;
+    color: #5d5d5d;
+}
+
+.landing-page .info p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #5d5d5d;
+}
+
+.landing-page .info button {
+    border: 0;
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #6c63ff;
+}
+
+.landing-page .image {
+    width: 50%;
+    float: right;
+    margin-top: 35px;
+}
+
+.landing-page .image img {
+    max-width: 100%;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* End Landing Page */
+/* .home {
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 50%,
@@ -70,11 +165,8 @@ export default {
   background-size: cover;
   min-height: 100vh;
   background-position: center;
-}
+} */
 
-#landingP{
-  /* -webkit-text-stroke-width: 5px;
-  -webkit-text-stroke-color: black; */
-}
+
 
 </style>

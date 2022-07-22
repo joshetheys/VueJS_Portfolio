@@ -51,10 +51,10 @@
                 <div class="row">
                     <!-- <div class="d-grid gap-5 d-md-block"> -->
                     <div class="col-2">
-                        <button class="w-100 btn btn-primary rounded-pill" type="button">Download CV</button>
+                        <button class="w-100 btn rounded-pill" type="button">Download CV</button>
                     </div>
                     <div class="col-2">
-                        <button class="w-100 btn btn-primary rounded-pill" type="button">GitHub</button>
+                        <button class="w-100 btn rounded-pill" type="button">GitHub</button>
                     </div>
 
 
@@ -68,26 +68,96 @@
   </div>
 
    <h1 class="display-2 text-center p-5" >Skills</h1>
-    <div class="container">
+    <div class="container" id="progressbar">
         <div class="row">
             <div class="col-4">
                 CSS
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
                   </div>
             </div>
             <div class="col-4">
                 HTML
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
                   </div>
             </div>
             <div class="col-4">
-                Java Script
+                JavaScript
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                Bootstrap
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                  </div>
+            </div>
+            <div class="col-4">
+                MySQL
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                  </div>
+            </div>
+            <div class="col-4">
+                VUE.JS
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                Design Thinking
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                  </div>
+            </div>
+            <div class="col-4">
+                Resilence
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                  </div>
+            </div>
+            <div class="col-4">
+                Public Speaking
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                Empathy
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                  </div>
+            </div>
+            <div class="col-4">
+                Communication
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                  </div>
+            </div>
+            <div class="col-4">
+                Interpersonal Skills
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
                   </div>
             </div>
         </div>
     </div>
 </template>
+
+<style>
+.btn{
+    background-color: #6c63ff;
+}
+.progress{
+    background-color: #6c63ff !important;
+}
+
+</style>

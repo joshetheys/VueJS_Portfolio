@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar sticky-top navbar-expand-lg bg-dark">
+    <nav class="navbar sticky-top navbar-expand-lg" style="color: white; background-color: #3D3D3D">
     <div class="container">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
    <i class="fas fa-bars"></i>
@@ -7,24 +7,24 @@
   </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end text-white">
           <li class="nav-item active">
-            <a class="nav-link" href="#"><router-link to="/">Home</router-link></a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><router-link to="/about">About</router-link></a>
+            <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><router-link to="/resume">Resume</router-link></a>
+              <a class="nav-link" href="#resume">Resume</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><router-link to="/projects">Projects</router-link></a>
+                <a class="nav-link" href="">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><router-link to="/testimonial">Testimonials</router-link></a>
+                  <a class="nav-link" href="#">Testimonials</a>
                 </li>
                       <li class="nav-item">
-                  <a class="nav-link" href="#"><router-link to="/contact">Contact</router-link></a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
         </ul>
       </div>
@@ -62,6 +62,10 @@ body {
 .fa-bars {
   color: pink;
   font-size: 30px;
+}
+
+a{
+  color: white
 }
 
 </style>

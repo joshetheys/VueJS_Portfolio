@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer class="text-white">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -38,6 +38,7 @@
 footer {
   padding: 25px 0;
   text-align: center;
+  background-color: #3D3D3D
 }
 footer span.copyright {
   font-size: 90%;
@@ -70,7 +71,8 @@ ul.social-buttons li a {
   color: #fff;
   border-radius: 100%;
   outline: 0;
-  background-color: #212529;
+ 
+  background-color: #6c63ff;
 }
 ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
