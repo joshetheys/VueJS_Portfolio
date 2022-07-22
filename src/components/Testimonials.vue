@@ -1,7 +1,7 @@
 <template>
     <section  id="testimonials" style="padding-top: 4em;">
-        <div class="section-title display-2 text-center" style="color: #6c63ff">
-            <h2>Testimonials</h2>
+        <div class="section-title text-center" style="color: #6c63ff">
+            <h2 class="display-2 ">Testimonials</h2>
         </div>
         <div class="container">
             <div class="row">
