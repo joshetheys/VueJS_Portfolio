@@ -21,11 +21,11 @@
                             {{ project.aboutProject }}
                             <i class="fas fa-quote-right"></i>
                         </p>
-                        <!-- <p class="project-link">
+                         <p class="project-link">
                             
                             {{ project.githubLink }} {{ project.liveLink }}
                             
-                        </p> -->
+                        </p> 
                     </div>
                 </div>
             </div>
