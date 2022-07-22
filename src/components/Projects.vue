@@ -1,7 +1,7 @@
 <template>
     <section id="projects">
-        <div class="section-title display-2 text-center" style="color: #6c63ff">
-            <h2>Projects</h2>
+        <div class="section-title text-center" style="color: #6c63ff">
+            <h2 class="display-2 ">Projects</h2>
         </div>
         <div class="container pt-5">
             <div class="row">
@@ -21,11 +21,11 @@
                             {{ project.aboutProject }}
                             <i class="fas fa-quote-right"></i>
                         </p>
-                        <p class="project-link">
-                            <!-- <i class="fas fa-quote-left"></i> -->
+                        <!-- <p class="project-link">
+                            
                             {{ project.githubLink }} {{ project.liveLink }}
-                            <!-- <i class="fas fa-quote-right"></i> -->
-                        </p>
+                            
+                        </p> -->
                     </div>
                 </div>
             </div>
