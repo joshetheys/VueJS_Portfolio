@@ -2,7 +2,7 @@
 <template>
 
 
-<div class="landing-page" id="home">
+<div class="landing-page " id="home">
   <div class="container">
 
     <div class="info">
@@ -10,9 +10,9 @@
       <p>I am an aspiring full-stack developer.</p>
       <button> <a href="https://github.com/joshetheys"></a>GitHub</button>
     </div>
-    <div class="image">
+    <!-- <div class="image">
       <img src="https://i.postimg.cc/qRFKSZZ1/Joshe-Jade-1-removebg-preview.png">
-    </div>
+    </div> -->
     <div class="clearfix"></div>
   </div>
 </div>
@@ -58,6 +58,12 @@ body {
 /* Start Landing Page */
 
 .landing-page {
+  width: 100%;
+  height: 100vh;
+   background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(https://i.postimg.cc/Jhj3WbHN/eberhard-grossgasteiger-Nvesr-Dbsr-L4-unsplash.jpg);
     position: relative;
     background-color: #FFF;
 }
@@ -101,10 +107,14 @@ body {
 }
 
 .landing-page .info {
-    width: 35%;
-    float: left;
-    margin-top: 130px;
+     width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
 }
+
 
 .landing-page .info h1 {
     font-size: 44px;
