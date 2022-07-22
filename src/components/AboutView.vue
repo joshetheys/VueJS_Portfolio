@@ -29,9 +29,9 @@
 
                 <div class="row">
                     <!-- <div class="d-grid gap-5 d-md-block"> -->
-                    <div class="col-6">
+                    <!-- <div class="col-6">
                         <button class="w-100 btn rounded-pill" style="background-color: #6c63ff; color: white" type="button">Download CV</button>
-                    </div>
+                    </div> -->
                     <div class="col-6">
                         <button class="w-100 btn rounded-pill" style="background-color: #6c63ff; color: white" type="button"> <a href="https://github.com/joshetheys">GitHub</a> </button>
                     </div>
@@ -46,7 +46,7 @@
     </div>
   </div>
 
-   <h1 class="display-2 text-center p-5" >Skills</h1>
+   <h1 class="display-2 text-center p-5" style="color: #6c63ff">Skills</h1>
     <div class="container" id="progressbar">
         <div class="row">
             <div class="col-4">
